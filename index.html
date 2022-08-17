@@ -1,0 +1,94 @@
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App with Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- start quiz -->
+    <div class="container-btn">
+        <button class="start-quiz">Start Quiz</button>
+    </div>
+    <!-- start quiz -->
+    
+    <!-- start info box -->
+    <div class="info-box">
+        <h3 class="title-rules">
+            Some Rules of this Quiz
+        </h1>
+
+        <div class="rules">
+            <p>1.You will have only <span>15 seconds</span> per each question.</p>
+            <p>2.Once you select your answer, it can't be undone</p>
+            <p>3.You can't select any option ince time goesoff.</p>
+            <p>4.You can't exit from the Quiz while you're playing</p>
+            <p>5.You'll get points on the basis of your correct answers</p>
+        </div>
+
+        <div class="info-box-footer">
+            <div class="info-box-btns">
+                <button class="info-exit outline-btn">Exit Quiz</button>
+                <button class="info-continue main-btn">continue</button>
+            </div>
+        </div>
+    </div>
+    <!-- end info box -->
+    
+    <!-- start quiz box -->
+    <div class="quiz-box">
+        <header>
+            <h3 class="title">Awesome Quiz Appliction</h3>
+            <div class="timer">
+                <p class="timer-text">Time Left</p>
+                <span class="text-num">15</span>
+            </div>
+            <div class="line-timer"></div>
+        </header>
+
+        <section>
+            <h1 class="quiz-text"></h1>
+            <div class="quiz-options">
+                <!-- <div class="option">
+                    <span>Hyper Text Preprocessor</span>
+                    
+                </div>
+                <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    
+                </div>
+                <div class="option">
+                    <span>Hyper Text Multiple Language</span>
+                </div>
+                <div class="option">
+                    <span>Hyper Tool multi Language</span>
+                </div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total-que">
+                <!-- <p><span>2</span> of <span>5</span> questions</p> -->
+            </div>
+            <button class="quiz-box-next main-btn">next Que</button>
+        </footer>
+    </div>
+    <!-- end quiz box -->
+
+    <!-- start result box -->
+    <div class="result-box">
+        <i class="fa-solid fa-crown"></i>
+        <p class="completed-text">you've completed the Quiz!</p>
+        <p class="score-text">and nice, You got <span>2</span> out of <span>5</span></p>
+        <div class="result-buttons">
+            <button class="replay-result main-btn">Replay Quiz</button>
+            <button class="quit-result outline-btn">Quit Quiz</button>
+        </div>
+    </div>
+    <!-- end result box -->
+    <script src="questions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
